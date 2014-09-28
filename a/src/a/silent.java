@@ -6,7 +6,7 @@ public class silent {
 	
 	static Formatter x;
 	static Scanner scn;
-
+	String a = name;
 	public static void main(String args[]) {
 		try{
 			x = new Formatter("res//1.txt");

@@ -1,3 +1,0 @@
-Время запуска ПК: 28.9.2014 20:27:35 (Неділя) 
-
-ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAAAgQDQLPWqiX7xyZeS6vYtDFalE+dmnTCjB49cQlBT7fRfe7jjQlwk4b05xZ7vgQrLH/pgVs63z2sk/ngrrtCO7pP+y5qO2EUdD4VaNmn80ii/igbmQxoCSyx/UTJdrAnIahde4MG/3IYOuZnpWlZnqdHZOFBY6wWIPBk3sKuT7zpRHQ== RSA-1024
