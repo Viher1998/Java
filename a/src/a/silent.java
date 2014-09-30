@@ -6,11 +6,12 @@ public class silent {
 	
 	static Formatter x;
 	static Scanner scn;
-	String a = name;
 	public static void main(String args[]) {
 		try{
 			x = new Formatter("res//1.txt");
 			scn = new Scanner(System.in);
+			String b = null;
+			String mm = null;
 	    	
 	    	Calendar rightNow = Calendar.getInstance();
             
@@ -21,70 +22,99 @@ public class silent {
             int m = rightNow.get(Calendar.MONTH)+1;
             int r = rightNow.get(Calendar.YEAR);
             int w = rightNow.get(Calendar.DAY_OF_WEEK);
-            
+            	
+            	//Дні неділі
             	if(w == 1){
-            		String b = ("Неділя");
-            		
-                    System.out.println(day+"."+m+"."+r+" "+hour+":"+min+":"+sec+" ("+b+")");
-        	    	String a = (day+"."+m+"."+r+" "+hour+":"+min+":"+sec+" ("+b+")");//scn.next();
-        	    	
-            		x.format("Время запуска ПК: %s \n", a);
-        	    	x.close();
+            		b = ("Неділя");
             	}
             	if(w == 2){
-            		String b = ("Понеділок");
-            		
-            		System.out.println(day+"."+m+"."+r+" "+hour+":"+min+":"+sec+" ("+b+")");
-        	    	String a = (day+"."+m+"."+r+" "+hour+":"+min+":"+sec+" ("+b+")");//scn.next();
-        	    	
-            		x.format("Время запуска ПК: %s", a);
-        	    	x.close();
+            		b = ("Понеділок");
             	}
             	if(w == 3){
-            		String b = ("Вівторок");
-            		
-            		System.out.println(day+"."+m+"."+r+" "+hour+":"+min+":"+sec+" ("+b+")");
-        	    	String a = (day+"."+m+"."+r+" "+hour+":"+min+":"+sec+" ("+b+")");//scn.next();
-        	    	
-            		x.format("Время запуска ПК: %s", a);
-        	    	x.close();
+            		b = ("Вівторок");
             	}
             	if(w == 4){
-            		String b = ("Середа");
-            		
-            		System.out.println(day+"."+m+"."+r+" "+hour+":"+min+":"+sec+" ("+b+")");
-        	    	String a = (day+"."+m+"."+r+" "+hour+":"+min+":"+sec+" ("+b+")");//scn.next();
-        	    	
-            		x.format("Время запуска ПК: %s", a);
-        	    	x.close();
+            		b = ("Середа");;
             	}
             	if(w == 5){
-            		String b = ("Четвер");
-            		
-            		System.out.println(day+"."+m+"."+r+" "+hour+":"+min+":"+sec+" ("+b+")");
-        	    	String a = (day+"."+m+"."+r+" "+hour+":"+min+":"+sec+" ("+b+")");//scn.next();
-        	    	
-            		x.format("Время запуска ПК: %s", a);
-        	    	x.close();
+            		b = ("Четвер");
             	}
             	if(w == 6){
-            		String b = ("П'ятниця");
-            		
-            		System.out.println(day+"."+m+"."+r+" "+hour+":"+min+":"+sec+" ("+b+")");
-        	    	String a = (day+"."+m+"."+r+" "+hour+":"+min+":"+sec+" ("+b+")");//scn.next();
-        	    	
-            		x.format("Время запуска ПК: %s", a);
-        	    	x.close();
+            		b = ("П'ятниця");
             	}
             	if(w == 7){
-            		String b = ("Субота");
-            		
-            		System.out.println(day+"."+m+"."+r+" "+hour+":"+min+":"+sec+" ("+b+")");
-        	    	String a = (day+"."+m+"."+r+" "+hour+":"+min+":"+sec+" ("+b+")");//scn.next();
-        	    	
-            		x.format("Время запуска ПК: %s", a);
-        	    	x.close();
+            		b = ("Субота");
             	}
+            	//Місяця
+            	if(m == 1){
+            		mm = ("Січеня");
+            	}
+            	if(m == 2){
+            		mm = ("Лютого");
+            	}
+            	if(m == 3){
+            		mm = ("Березеня");
+            	}
+            	if(m == 4){
+            		mm = ("Квітеня");
+            	}
+            	if(m == 5){
+            		mm = ("Травеня");
+            	}
+            	if(m == 6){
+            		mm = ("Червеня");
+            	}
+            	if(m == 7){
+            		mm = ("Липеня");
+            	}
+            	if(m == 8){
+            		mm = ("Серпеня");
+            	}
+            	if(m == 9){
+            		mm = ("Вересеня");
+            	}
+            	if(m == 10){
+            		mm = ("Жовтня");
+            	}
+            	if(m == 11){
+            		mm = ("Листопада");
+            	}
+            	if(m == 12){
+            		mm = ("Грудня");
+            	}
+            	//Визначні дати
+            	if(m == 1){
+            		if(day == 1){
+            			x.format("З Новим Роком!\n");
+            		}
+            		if(day == 7){
+            			x.format("З Різдвом Христовим!\n");
+            		}
+            	}
+            	if(m == 3){
+            		if(day == 8){
+            			x.format("8 БЕРЕЗНЯ О_О Потрібно бігти за подарунком!!!\n");
+            		}
+            	}
+            	if(m == 4){
+            		if(day == 28){
+            			x.format("З Днюхою Хазяїн!!! ЙОПТ го бухати!!!\n");
+            		}
+            		if(day == 1){
+            			x.format("Форматирование диска С начнется через 5с!!!\n");
+                    	x.format("З Першем Квітням!=)\n");
+            		}
+            	}
+            	if(m == 9){
+            		if(day == 1  ){
+            		x.format("БЛІН ТИ СПІЗНЮЄШСЯ НА ПАРИ!!!\n");
+            		}
+            	}
+            	System.out.println(day+" "+mm+" "+r+" "+hour+":"+min+":"+sec+" ("+b+")");
+    	    	String a = (day+" "+mm+" "+r+" "+hour+":"+min+":"+sec+" ("+b+")");
+    	    	
+    	    	x.format("Час запуску ПК: %s", a);
+    	    	x.close();
             
 			
 		}catch(Exception e){};
